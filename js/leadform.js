@@ -9,7 +9,7 @@
     'use strict';
 
     var BREVO_CLIENT_KEY = '8wu1qch8jjsjqow1so5ik23n';
-    var FUNNEL_TAG = 'Whitepaper_Aluminium';
+    var FUNNEL_TAG = 'Industry_Brief_ASE';
     var MIN_SUBMIT_TIME_MS = 2000;
     var PAGE_LOAD_TIME = Date.now();
 
@@ -129,7 +129,7 @@
                         NACHNAME: lastName,
                         FIRMA: company || '',
                         POSITION: position || '',
-                        LEAD_SOURCE: 'Whitepaper Landing Page',
+                        LEAD_SOURCE: 'AS Electronic Industry Brief',
                         FUNNEL_TAG: FUNNEL_TAG,
                         GDPR_CONSENT: true,
                         CONSENT_DATE: new Date().toISOString(),

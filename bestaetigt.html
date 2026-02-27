@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Mail bestätigt – Ihr Whitepaper</title>
+    <title>E-Mail bestätigt – AS Electronic Industry Brief</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -14,67 +14,73 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--clr-bg);
-            padding: var(--space-xl);
+            background: var(--bg-dark);
+            padding: 3rem 1rem;
         }
         .confirm-card {
-            background: var(--clr-surface);
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--line);
             border-radius: var(--radius-lg);
-            padding: var(--space-3xl);
+            padding: 3rem;
             max-width: 560px;
             width: 100%;
             text-align: center;
-            box-shadow: var(--shadow-card);
-            animation: fadeInUp 0.6s var(--ease) both;
+            animation: fadeInUp 0.6s var(--ease-out) both;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
         .confirm-icon {
             width: 72px;
             height: 72px;
-            background: var(--clr-success-bg);
+            background: var(--gold-soft);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto var(--space-xl);
-            color: var(--clr-success);
+            margin: 0 auto 2rem;
+            color: var(--gold);
         }
         .confirm-card h1 {
             font-family: var(--font-display);
             font-size: 1.75rem;
-            margin-bottom: var(--space-md);
+            color: var(--text-light);
+            margin-bottom: 1rem;
         }
         .confirm-card p {
-            color: var(--clr-text-muted);
+            color: var(--text-muted);
             font-size: 1rem;
             line-height: 1.7;
-            margin-bottom: var(--space-lg);
+            margin-bottom: 1.5rem;
         }
         .confirm-steps {
             text-align: left;
-            background: var(--clr-bg);
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--line);
             border-radius: var(--radius-md);
-            padding: var(--space-xl);
-            margin: var(--space-xl) 0;
+            padding: 1.5rem;
+            margin: 2rem 0;
         }
         .confirm-steps h3 {
-            font-size: 0.875rem;
+            font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--clr-text-light);
-            margin-bottom: var(--space-md);
+            letter-spacing: 0.08em;
+            color: var(--gold);
+            margin-bottom: 1rem;
         }
         .step {
             display: flex;
-            gap: var(--space-md);
-            padding: var(--space-sm) 0;
+            gap: 1rem;
+            padding: 0.5rem 0;
         }
         .step-num {
             flex-shrink: 0;
             width: 28px;
             height: 28px;
-            background: var(--clr-accent);
-            color: white;
+            background: var(--gold);
+            color: var(--bg-dark);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -83,21 +89,22 @@
             font-weight: 700;
         }
         .step-text {
-            font-size: 0.9375rem;
-            color: var(--clr-text);
+            font-size: 0.9rem;
+            color: var(--text-light);
             padding-top: 3px;
         }
         .step-text strong { display: block; margin-bottom: 2px; }
-        .step-text span { color: var(--clr-text-muted); font-size: 0.875rem; }
+        .step-text span { color: var(--text-muted); font-size: 0.85rem; }
     </style>
 </head>
 <body>
     <header class="site-header">
         <div class="container header-inner">
-            <div class="logo">
-                <span class="logo-mark">BK</span>
-                <span class="logo-text">Bürk-Kauffmann</span>
-            </div>
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AS Electronic</span>
+                <span class="logo-sep">|</span>
+                <span class="logo-sub">Industry Brief</span>
+            </a>
         </div>
     </header>
 
@@ -109,7 +116,7 @@
 
             <h1>Bestätigung erfolgreich!</h1>
             <p id="welcomeText">
-                Vielen Dank für Ihre Bestätigung. Ihr Whitepaper ist auf dem Weg
+                Vielen Dank für Ihre Bestätigung. Das Industry Brief ist auf dem Weg
                 in Ihr Postfach.
             </p>
 
@@ -118,7 +125,7 @@
                 <div class="step">
                     <span class="step-num">1</span>
                     <div class="step-text">
-                        <strong>Whitepaper per E-Mail</strong>
+                        <strong>Briefing per E-Mail</strong>
                         <span>Sie erhalten das PDF in wenigen Minuten.</span>
                     </div>
                 </div>
@@ -138,18 +145,32 @@
                 </div>
             </div>
 
-            <p style="font-size: 0.8125rem; color: var(--clr-text-light);">
+            <p style="font-size:0.8rem; color:var(--text-dim);">
                 Sie können sich jederzeit abmelden. Kein Spam – versprochen.
             </p>
         </div>
     </div>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <span>&copy; 2025 AS Electronic</span>
+                <span>·</span>
+                <span>Industry Brief</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
 
     <script>
         var params = new URLSearchParams(window.location.search);
         var name = params.get('name');
         if (name) {
             document.getElementById('welcomeText').textContent =
-                'Vielen Dank, ' + name + '! Ihre E-Mail-Adresse wurde bestätigt. Das Whitepaper ist auf dem Weg in Ihr Postfach.';
+                'Vielen Dank, ' + name + '! Ihre E-Mail-Adresse wurde bestätigt. Das Briefing ist auf dem Weg in Ihr Postfach.';
         }
     </script>
 
